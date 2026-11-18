@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlphaX | Affordable Web Development Studio</title>
+<meta name="description" content="An AI-powered digital studio building modern websites, e-commerce stores, and custom web applications for businesses worldwide.">
+<meta name="theme-color" content="#070b14">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<script>
+  // Sections fade in via JS. If any script error happens, drop the 'js' class so nothing stays hidden.
+  document.documentElement.classList.add('js');
+  addEventListener('error', () => document.documentElement.classList.remove('js'));
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="AlphaX home">
+      <!-- AlphaX mark: stroke + flick (m-a), lime slash (m-b), foot (m-c); paths inline so each can animate -->
+      <svg class="logo-mark" viewBox="0 0 150 176" aria-hidden="true"><path class="m-a" d="M0 176h25l47-129 13 31 12-34-17-44H64z"/><path class="m-b" d="M124 0h25L85 176H59z"/><path class="m-c" d="M120 110l-12 33 11 33h26z"/></svg>
+      <span>Alpha<b>X</b></span>
+    </a>
+    <ul class="nav" id="nav">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-volt" href="#contact">Start a Project <span class="arr" aria-hidden="true">→</span></a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="spot" aria-hidden="true"></div>
+  <span class="tag tag-1" aria-hidden="true">React</span>
+  <span class="tag tag-2" aria-hidden="true">Node.js</span>
+  <span class="tag tag-3" aria-hidden="true">MongoDB</span>
+  <span class="tag tag-4" aria-hidden="true">Express.js</span>
+  <div class="wrap">
+    <p class="eyebrow">An AI-powered digital studio</p>
+    <h1 class="display hero-title">
+      <span class="line">Building digital</span>
+      <span class="line"><span class="code-chip" aria-hidden="true"><i>&lt;/&gt;</i></span><span class="c-volt">experiences</span></span>
+      <span class="line"><span class="c-dim">that move</span> business</span>
+      <span class="line"><span class="c-outline">forward.</span></span>
+    </h1>
+    <p class="lead">We design and develop modern websites, powerful digital products, and practical business solutions that help ambitious businesses grow. Thoughtful design, reliable development, and accessible pricing — shaped around your goals.</p>
+    <div class="hero-cta">
+      <a class="btn btn-volt" href="#contact">Start a Project <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#work">Explore Our Work</a>
+    </div>
+  </div>
+  <div class="stack-strip">
+    <p>Thoughtfully designed. Carefully built. Ready for what's next.</p>
+    <div class="marquee" style="--speed:38s"><div class="marquee-track" data-dup>
+      <span class="tech">MongoDB</span><span class="tech">Express.js</span><span class="tech">React</span><span class="tech">Node.js</span><span class="tech">JavaScript</span><span class="tech">TypeScript</span><span class="tech">REST APIs</span><span class="tech">Git &amp; GitHub</span><span class="tech">HTML &amp; CSS</span><span class="tech">Figma</span>
+    </div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Our services</p><h2 class="display h2">Everything you need<br>to build &amp; grow <span class="c-mark">digitally</span></h2></div>
+      <p class="lead">Whether you are launching a new business, improving an existing website, or building software around a business process, we can help you take the next step.</p>
+    </div>
+    <div class="services">
+      <article class="svc" style="--i:0;--bg:var(--mist)">
+        <span class="svc-num">01 /</span>
+        <div><h3 class="display">Web Development</h3><p>Responsive, fast, easy-to-use websites that introduce your business, communicate your value, and help visitors take action — React on the front, Node.js and Express when a full-stack solution is needed.</p>
+          <ul class="svc-tags"><li>Business websites</li><li>Landing pages</li><li>Portfolios &amp; blogs</li><li>Redesigns</li><li>Forms &amp; integrations</li></ul></div>
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+      </article>
+      <article class="svc" style="--i:1;--bg:var(--lime-soft)">
+        <span class="svc-num">02 /</span>
+        <div><h3 class="display">UI/UX Design</h3><p>Clear user flows and consistent interfaces for websites, dashboards, and digital products — designed in Figma and ready to become reusable React components.</p>
+          <ul class="svc-tags"><li>Wireframes &amp; user flows</li><li>High-fidelity UI</li><li>Clickable prototypes</li><li>Design systems</li><li>UX reviews</li></ul></div>
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+      </article>
+      <article class="svc" style="--i:2;--bg:var(--sand)">
+        <span class="svc-num">03 /</span>
+        <div><h3 class="display">E-commerce Development</h3><p>Online stores that present products clearly, simplify the buying journey, and support day-to-day store operations — from catalogue to checkout.</p>
+          <ul class="svc-tags"><li>Product catalogue</li><li>Cart &amp; checkout</li><li>Payment gateways</li><li>Orders &amp; inventory</li><li>Store admin</li></ul></div>
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></svg></div>
+      </article>
+      <article class="svc svc-dark" style="--i:3;--bg:var(--night-2)">
+        <span class="svc-num">04 /</span>
+        <div><h3 class="display">Custom Web Applications</h3><p>Purpose-built software for the way your business actually works. MERN is our core full-stack option for portals, dashboards, booking tools and data-driven apps.</p>
+          <ul class="svc-tags"><li>SaaS MVPs</li><li>Admin dashboards</li><li>Booking systems</li><li>CRM &amp; LMS tools</li><li>APIs &amp; user roles</li></ul></div>
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></div>
+      </article>
+      <article class="svc" style="--i:4;--bg:var(--sage)">
+        <span class="svc-num">05 /</span>
+        <div><h3 class="display">SEO &amp; Digital Marketing</h3><p>Practical website optimization and marketing support to improve discoverability and help the right audience find you — built on solid technical foundations and measurement.</p>
+          <ul class="svc-tags"><li>Technical SEO review</li><li>On-page SEO</li><li>Keyword research</li><li>Search Console &amp; analytics</li><li>Local SEO</li></ul></div>
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M8 11l2 2 4-4"/></svg></div>
+      </article>
+    </div>
+    <div class="help-note reveal">
+      <div><h3 class="display">Not sure what you need?</h3>
+        <p>Start with the outcome you want. If people need to understand your business online, a business website may be the right starting point. If you sell products, consider e-commerce. If your team needs a tool to manage a process, a custom web application may suit you better. Already have a website that struggles to attract or convert visitors? Let's talk SEO and optimization.</p></div>
+      <a class="btn btn-ink" href="#contact">Discuss Your Project <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section class="section tech-section" id="technology">
+  <div class="spot" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Technology we build with</p><h2 class="display h2">Built with modern<br><span class="c-volt">JavaScript</span></h2></div>
+      <p class="lead">We use the MERN stack — MongoDB, Express.js, React, and Node.js — to build full-stack web applications with interactive interfaces, reliable APIs, and flexible data management.</p>
+    </div>
+    <div class="stack">
+      <article class="stack-card reveal"><span class="stack-letter" aria-hidden="true">M</span><h3>MongoDB</h3><p>A document database for application data such as users, products, orders, and other records — where it fits the project.</p></article>
+      <article class="stack-card reveal"><span class="stack-letter" aria-hidden="true">E</span><h3>Express.js</h3><p>A Node.js web framework for backend routes, APIs, middleware, and server-side application logic.</p></article>
+      <article class="stack-card reveal"><span class="stack-letter" aria-hidden="true">R</span><h3>React</h3><p>A JavaScript library for interactive, reusable, component-based user interfaces.</p></article>
+      <article class="stack-card reveal"><span class="stack-letter" aria-hidden="true">N</span><h3>Node.js</h3><p>A JavaScript runtime that runs the backend and powers server-side functionality.</p></article>
+    </div>
+    <div class="tools reveal">
+      <p>Plus, when the project needs them:</p>
+      <span>HTML &amp; CSS</span><span>JavaScript</span><span>TypeScript</span><span>REST APIs</span><span>Git &amp; GitHub</span><span>Authentication</span><span>Cloud hosting</span><span>Payment gateways</span><span>Email services</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <p class="eyebrow reveal">About AlphaX</p>
+    <h2 class="display statement reveal">A founder-led studio making <span class="chip" style="background:var(--night);color:var(--volt)">thoughtful design</span> and <span class="c-mark">reliable development</span> accessible to businesses of every size.</h2>
+    <div class="about-grid">
+      <div class="stats">
+        <div class="stat-card reveal" style="background:var(--mist)"><h3>Mission</h3><p>To make useful, well-crafted digital solutions more accessible to businesses of every size.</p></div>
+        <div class="stat-card reveal" style="background:var(--night);color:var(--on-night)"><h3 class="c-volt">Vision</h3><p>To grow into a trusted digital product studio that combines thoughtful design, dependable engineering, and intelligent technology.</p></div>
+        <div class="stat-card reveal" style="background:var(--sage)"><h3>Founder-led</h3><p>You work directly with the person who understands your requirements, coordinates the work, and reviews the final delivery.</p></div>
+        <div class="stat-card reveal" style="background:var(--sand)"><h3>Worldwide</h3><p>We work with clients wherever they are — communication, scope, payments and milestones agreed upfront.</p></div>
+      </div>
+      <div class="about-copy reveal">
+        <p>AlphaX is an AI-powered digital studio helping startups, entrepreneurs, and growing businesses build a stronger digital presence. Our approach is simple: understand the problem, agree on a clear plan, build with care, and keep communication open throughout.</p>
+        <p>We were created around one idea — businesses should be able to access thoughtful design and reliable development without unnecessary complexity. AI tools support parts of our workflow, while project direction, communication, and final review remain human-led.</p>
+        <p>Our development is centered on the MERN stack. Using JavaScript across the frontend and backend helps us build connected, maintainable web solutions — from interactive business websites to custom applications. When a project needs specialist skills beyond our scope, we bring in trusted support.</p>
+        <div><a class="btn btn-ink" href="#contact">Let's build something useful <span class="arr" aria-hidden="true">→</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="big-marquee" aria-hidden="true"><div class="marquee" style="--speed:30s"><div class="marquee-track" data-dup>
+  <span class="big-word">Discover</span><span class="big-word">Plan</span><span class="big-word">Design</span><span class="big-word">Build</span><span class="big-word">Launch</span>
+</div></div></div>
+
+<!-- WORK (project types — replace with real or clearly labelled concept projects as you complete them) -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Our work</p><h2 class="display h2">A closer look at<br>what we <span class="c-mark">create</span></h2></div>
+      <p class="lead">We're preparing our project gallery. In the meantime, here are the kinds of solutions we build — tell us what you're planning.</p>
+    </div>
+    <div class="projects">
+      <a class="project reveal" href="#contact" style="--bg:var(--mist);--accent:var(--volt)">
+        <div class="project-media"><div class="mock" aria-hidden="true"><div class="mock-dots"><i></i><i></i><i></i></div><div class="mock-row mock-hl"></div><div class="mock-row" style="width:80%"></div><div class="mock-row" style="width:60%"></div><div class="mock-grid"><i></i><i></i><i></i></div></div></div>
+        <div class="project-body">
+          <span class="pill-tag">Project type · Custom web app</span>
+          <h3 class="display">Dashboards &amp; portals</h3>
+          <p>Analytics dashboards, customer portals and booking systems that bring your workflows into one place, with role-based access where needed.</p>
+          <div class="result"><b>MERN</b><span>MongoDB · Express · React · Node</span></div>
+          <span class="view">Discuss a project like this <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a class="project reveal" href="#contact" style="--bg:var(--lime-soft);--accent:var(--volt)">
+        <div class="project-media"><div class="mock" aria-hidden="true"><div class="mock-dots"><i></i><i></i><i></i></div><div class="mock-row mock-hl"></div><div class="mock-row" style="width:70%"></div><div class="mock-grid"><i></i><i></i><i></i></div><div class="mock-grid"><i></i><i></i><i></i></div></div></div>
+        <div class="project-body">
+          <span class="pill-tag">Project type · E-commerce</span>
+          <h3 class="display">Online stores</h3>
+          <p>Stores for fashion, lifestyle, electronics and local brands — product catalogues, customer accounts, carts, checkout and an admin to run it all.</p>
+          <div class="result"><b>React</b><span>storefront + Node.js API</span></div>
+          <span class="view">Plan your online store <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a class="project reveal" href="#contact" style="--bg:var(--sage);--accent:var(--mist)">
+        <div class="project-media"><div class="mock" aria-hidden="true"><div class="mock-dots"><i></i><i></i><i></i></div><div class="mock-row mock-hl"></div><div class="mock-row" style="width:85%"></div><div class="mock-row" style="width:50%"></div><div class="mock-grid"><i></i><i></i><i></i></div></div></div>
+        <div class="project-body">
+          <span class="pill-tag">Project type · Business website</span>
+          <h3 class="display">Business websites</h3>
+          <p>Clear, credible websites for startups, consultants, agencies and local businesses — responsive, SEO-ready and easy to engage with.</p>
+          <div class="result"><b>SEO</b><span>ready foundations from day one</span></div>
+          <span class="view">Tell us about your website <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section about" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Our process</p><h2 class="display h2">A clear process.<br><span class="c-mark">No unnecessary</span> complexity.</h2></div>
+      <p class="lead">Every project is different, but a clear process helps everyone understand what happens next. We keep communication direct and organize the work into practical stages.</p>
+    </div>
+    <div class="process">
+      <article class="step reveal"><b>01</b><h3>Discover</h3><p>We learn about your business, audience, goals, existing systems, and the problem you want to solve.</p></article>
+      <article class="step reveal"><b>02</b><h3>Define the scope</h3><p>A written scope with deliverables, exclusions, milestones and a proposed timeline. Work begins once it's approved.</p></article>
+      <article class="step reveal"><b>03</b><h3>Plan &amp; design</h3><p>We organize the structure or product flows, set the visual direction, and prepare designs or prototypes for your review.</p></article>
+      <article class="step reveal"><b>04</b><h3>Develop</h3><p>We build the agreed features, connect required services, and share progress at planned milestones.</p></article>
+      <article class="step reveal"><b>05</b><h3>Test &amp; refine</h3><p>We check functionality, responsive behavior, forms, key user journeys, and performance and accessibility basics.</p></article>
+      <article class="step reveal"><b>06</b><h3>Launch &amp; hand over</h3><p>We deploy or hand over the project with agreed access and documentation, and show you how everything works.</p></article>
+    </div>
+    <div class="duo">
+      <article class="note note-dark reveal"><p class="eyebrow">AI-powered approach</p><h3 class="display">Better workflows, with people at the centre.</h3><p>We use modern AI tools to support research, planning, design exploration, coding assistance, testing, and documentation. Project decisions, client communication, and final quality checks stay under human oversight — and we never share confidential client information with external AI services without permission.</p></article>
+      <article class="note reveal" style="background:var(--lime-soft)"><p class="eyebrow">Client collaboration</p><h3 class="display">Your feedback keeps us aligned.</h3><p>We ask you to nominate one main contact, share content and access on time, and consolidate feedback at each review stage. It avoids delays and conflicting instructions — and keeps your project moving.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section voices" id="values">
+  <div class="wrap">
+    <div class="section-head center reveal"><p class="eyebrow">Our values</p><h2 class="display h2">What we<br><span class="c-volt">stand for</span></h2></div>
+  </div>
+  <div class="marquee" style="--speed:60s"><div class="marquee-track" data-dup>
+    <blockquote class="quote"><b class="promise-num">01</b><p>We communicate in plain language and aim for clear expectations.</p><footer><small>Clarity</small></footer></blockquote>
+    <blockquote class="quote"><b class="promise-num">02</b><p>We focus on solutions that address real needs.</p><footer><small>Practicality</small></footer></blockquote>
+    <blockquote class="quote"><b class="promise-num">03</b><p>We care about usability, reliability, and maintainable work.</p><footer><small>Quality</small></footer></blockquote>
+    <blockquote class="quote"><b class="promise-num">04</b><p>We discuss scope, pricing, trade-offs, and limitations openly.</p><footer><small>Transparency</small></footer></blockquote>
+    <blockquote class="quote"><b class="promise-num">05</b><p>We keep improving our methods and technical skills.</p><footer><small>Continuous learning</small></footer></blockquote>
+    <blockquote class="quote"><b class="promise-num">06</b><p>We use AI as an assistant, not as a substitute for accountability.</p><footer><small>Responsible AI</small></footer></blockquote>
+  </div></div>
+</section>
+
+<!-- WHY US -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="section-head reveal"><div><p class="eyebrow">Why choose us</p><h2 class="display h2">Smart solutions.<br><span class="c-mark">Practical pricing.</span></h2></div><p class="lead">A clear process, careful execution, and a studio that stays with you beyond launch.</p></div>
+    <div class="why">
+      <article class="why-card reveal" style="--bg:var(--mist)"><div><h3 class="display">Accessible</h3><h4>Focus on what matters</h4></div><p>We focus on the features and work that matter, helping you avoid unnecessary complexity and cost.</p></article>
+      <article class="why-card reveal" style="--bg:var(--night);color:var(--on-night)"><div><h3 class="display">AI-assisted</h3><h4>Efficient, human-reviewed</h4></div><p>AI tools support research, planning, development and repetitive tasks — with human review throughout.</p></article>
+      <article class="why-card reveal" style="--bg:var(--lime-soft)"><div><h3 class="display">Goal-driven</h3><h4>Built around you</h4></div><p>We begin by understanding your audience, business needs, and the outcomes you want.</p></article>
+      <article class="why-card reveal" style="--bg:var(--sand)"><div><h3 class="display">Careful</h3><h4>Execution that lasts</h4></div><p>We pay attention to usability, responsive layouts, performance, and maintainability.</p></article>
+      <article class="why-card reveal" style="--bg:var(--night-3);color:var(--on-night)"><div><h3 class="display">Transparent</h3><h4>No surprises</h4></div><p>Scope, pricing, trade-offs and third-party costs are discussed openly before work begins.</p></article>
+      <article class="why-card reveal" style="--bg:var(--sage)"><div><h3 class="display">Beyond launch</h3><h4>Ongoing support</h4></div><p>Maintenance and improvements after delivery can be arranged as an ongoing service.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head center reveal"><p class="eyebrow">Pricing</p><h2 class="display h2">Fair pricing,<br>shaped to your scope</h2><p class="lead">Pricing depends on scope, complexity, integrations, content, and timeline. Share your requirements and we'll prepare a tailored estimate — no guesswork, no hidden extras.</p></div>
+    <div class="plans">
+      <article class="plan reveal">
+        <h3 class="display">Websites</h3>
+        <p class="muted">Business sites, landing pages &amp; redesigns.</p>
+        <div class="price"><b>Custom</b><span>tailored estimate</span></div>
+        <ul><li>Discovery &amp; requirements summary</li><li>Page structure &amp; design direction</li><li>Responsive build for every screen</li><li>Forms &amp; agreed integrations</li><li>Basic on-page SEO setup</li><li>Testing, deployment &amp; handover</li></ul>
+        <a class="btn btn-line" href="#contact" data-plan="Web Development">Get a Quote</a>
+      </article>
+      <article class="plan plan-featured reveal">
+        <span class="deal">#Full-stack MERN</span>
+        <h3 class="display">Web apps</h3>
+        <p class="muted">Dashboards, portals, SaaS MVPs &amp; business tools.</p>
+        <div class="price"><b>Custom</b><span>tailored estimate</span></div>
+        <ul><li>Requirements &amp; feature specification</li><li>Architecture proposal</li><li>React UI for agreed screens</li><li>Node.js, Express &amp; MongoDB backend</li><li>Authentication &amp; user roles</li><li>Technical handover documentation</li></ul>
+        <a class="btn btn-volt" href="#contact" data-plan="Custom Web Applications">Discuss Your Project <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+      <article class="plan reveal">
+        <h3 class="display">E-commerce</h3>
+        <p class="muted">Online stores built to sell and to manage.</p>
+        <div class="price"><b>Custom</b><span>tailored estimate</span></div>
+        <ul><li>Store structure &amp; page templates</li><li>Product &amp; category setup</li><li>Cart &amp; checkout flow</li><li>Payment integration (provider approval)</li><li>Order management as scoped</li><li>Admin handover &amp; guidance</li></ul>
+        <a class="btn btn-line" href="#contact" data-plan="E-commerce Development">Plan Your Store</a>
+      </article>
+    </div>
+    <p class="fine-print reveal">Domain, hosting, payment gateways and other third-party services are billed by their providers, and any recurring costs are identified before we start. Every project begins with an agreed scope listing deliverables, exclusions, revision rounds, milestones and payment terms.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section about" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side reveal">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="display h2">Questions?<br><span class="c-mark">Answers.</span></h2>
+      <p class="lead">Not sure which service is right for you? That's okay. <a href="#contact">Tell us what you're trying to achieve</a> and we'll suggest a sensible starting point.</p>
+    </div>
+    <div class="faq reveal">
+      <details open><summary>What types of businesses do you work with?</summary><p>Startups, entrepreneurs, professionals, small and medium-sized businesses, and organizations that need websites or custom digital solutions. We review each inquiry to confirm the project is a good fit.</p></details>
+      <details><summary>Do you work with international clients?</summary><p>Yes. We work with clients wherever they're based. Communication, scope, payment arrangements, and delivery milestones are agreed before work begins.</p></details>
+      <details><summary>What technologies do you use?</summary><p>Our core full-stack stack is MERN: MongoDB, Express.js, React, and Node.js. We may also use HTML, CSS, JavaScript or TypeScript, Git, REST APIs, and suitable hosting or third-party services depending on the project. A simple marketing website may not need a database or custom backend — we choose the architecture that fits.</p></details>
+      <details><summary>How much does a website cost?</summary><p>It depends on the number of pages, design requirements, functionality, integrations, content needs, and timeline. Share your requirements and we'll prepare a tailored estimate.</p></details>
+      <details><summary>How long does a project take?</summary><p>Timelines depend on scope, feedback, content readiness, and third-party integrations. We provide an estimated schedule after reviewing your requirements.</p></details>
+      <details><summary>Can you redesign my existing website?</summary><p>Yes. We can review your current website and discuss improvements to its design, usability, content structure, performance, or functionality.</p></details>
+      <details><summary>Will my website work on mobile devices?</summary><p>Responsive behavior is part of our development approach. We test agreed pages and key layouts across common screen sizes and browsers.</p></details>
+      <details><summary>Can you help with domain and hosting?</summary><p>We can guide you through choosing a domain and hosting, and assist with setup or deployment where included in scope. Domain, hosting, and third-party subscription fees are normally paid separately by the client.</p></details>
+      <details><summary>Do you provide website maintenance?</summary><p>Maintenance can be arranged as a separate ongoing service. The plan specifies what's covered, response expectations, update frequency, backups, and any excluded work.</p></details>
+      <details><summary>Can you integrate payment gateways?</summary><p>We can integrate payment providers supported for your business location and customer market. Provider approval, merchant eligibility, transaction fees, and account setup are controlled by the payment provider.</p></details>
+      <details><summary>Do you use AI to build projects?</summary><p>We use AI-assisted tools where they improve research, planning, coding assistance, testing, and documentation. A human reviews project decisions and deliverables, and we remain responsible for the work we agree to provide.</p></details>
+      <details><summary>Will I own my website after completion?</summary><p>Ownership, source-code handover, licenses, third-party components, and access transfer are defined in the project agreement. We explain any exceptions before the project starts.</p></details>
+      <details><summary>Can I request changes after the project is complete?</summary><p>Small corrections within the agreed support period are handled per the project agreement. New features, redesigns, and changes outside the agreed scope may need a separate quote.</p></details>
+      <details><summary>What do you need from me to start?</summary><p>A short description of your business and goals, the service you need, examples you like, required features, any existing website or brand assets, a budget range if available, and your preferred timeline.</p></details>
+      <details><summary>Do you guarantee first-page Google rankings?</summary><p>No responsible provider can guarantee a specific Google ranking. We improve technical and on-page foundations, follow good practices, and monitor performance — but search results depend on many factors outside anyone's control.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT + FOOTER -->
+<section class="contact" id="contact">
+  <div class="spot" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="display h2">Tell us what<br>you're looking<br><span class="c-volt">to build.</span></h2>
+        <p class="lead">Have a website idea, a product to develop, or an existing project that needs attention? Share a few details and we'll review your inquiry, then get back to you about next steps.</p>
+        <div class="contact-points">
+          <!-- Replace with your real business email (also update CONTACT_EMAIL in script.js) -->
+          <a href="mailto:hello@alphax.dev"><span><small>Email</small>hello@alphax.dev</span><span aria-hidden="true">↗</span></a>
+          <!-- Replace XXXXXXXXXXXX with your WhatsApp number in international format, digits only (here and in the footer) -->
+          <a href="https://wa.me/XXXXXXXXXXXX" target="_blank" rel="noopener"><span><small>WhatsApp</small>Message us on WhatsApp</span><span aria-hidden="true">↗</span></a>
+          <div><span><small>Location</small>Remote · Working worldwide</span><span aria-hidden="true">◎</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label class="field">Full name *<input class="input" name="name" autocomplete="name" placeholder="Enter your name" required aria-describedby="err-name"><span class="err" id="err-name" hidden>Please enter your name.</span></label>
+            <label class="field">Work email *<input class="input" name="email" type="email" autocomplete="email" placeholder="you@company.com" required aria-describedby="err-email"><span class="err" id="err-email" hidden>Enter an email address where we can reach you.</span></label>
+          </div>
+          <div class="form-row">
+            <label class="field">Company or organization<input class="input" name="company" autocomplete="organization" placeholder="Optional"></label>
+            <label class="field">Website URL<input class="input" name="website" type="url" autocomplete="url" placeholder="Optional"></label>
+          </div>
+          <div class="field" role="group" aria-labelledby="need-label" aria-describedby="err-service"><span id="need-label">What service are you interested in? *</span>
+            <div class="chips">
+              <button type="button" class="chip-btn" aria-pressed="false">Web Development</button>
+              <button type="button" class="chip-btn" aria-pressed="false">UI/UX Design</button>
+              <button type="button" class="chip-btn" aria-pressed="false">E-commerce Development</button>
+              <button type="button" class="chip-btn" aria-pressed="false">Custom Web Applications</button>
+              <button type="button" class="chip-btn" aria-pressed="false">SEO &amp; Digital Marketing</button>
+              <button type="button" class="chip-btn" aria-pressed="false">Other / Not Sure Yet</button>
+            </div>
+            <span class="err" id="err-service" hidden>Pick at least one service — "Other / Not Sure Yet" is fine.</span>
+          </div>
+          <label class="field">Tell us about your project *<textarea class="input" name="message" placeholder="What are you looking to build? Include the main features or challenges." required aria-describedby="err-message"></textarea><span class="err" id="err-message" hidden>Tell us a little about your project.</span></label>
+          <div class="form-row">
+            <label class="field">Estimated budget
+              <select class="input" name="budget"><option value="">Not decided yet</option><option>Under $250</option><option>$250–$500</option><option>$500–$1,000</option><option>$1,000–$3,000</option><option>$3,000+</option><option>Prefer to discuss</option></select>
+              <span class="hint">A rough range helps us recommend a suitable scope.</span></label>
+            <label class="field">Preferred timeline<input class="input" name="timeline" placeholder="e.g. Launch by March"><span class="hint">When would you like to start or launch?</span></label>
+          </div>
+          <label class="field">How did you hear about us?<input class="input" name="source" placeholder="Optional"></label>
+          <label class="consent"><input type="checkbox" name="consent" aria-describedby="err-consent"> <span>I agree that AlphaX may contact me about this inquiry and handle my information according to its Privacy Policy. *</span></label>
+          <span class="err" id="err-consent" hidden>Please confirm so we can reply to you.</span>
+          <p class="err" id="form-err" role="alert" hidden></p>
+          <button class="btn btn-volt" type="submit">Send Project Inquiry <span class="arr" aria-hidden="true">→</span></button>
+        </form>
+        <div class="sent" role="status" tabindex="-1" id="sent"><h3 class="display" id="sent-title">Thanks for reaching out.</h3><p style="margin:0" id="sent-text">Your inquiry has been submitted successfully. We'll review the details and contact you using the information you provided.</p></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div>
+          <a class="logo" href="#top" aria-label="AlphaX home"><svg class="logo-mark" viewBox="0 0 150 176" aria-hidden="true"><path class="m-a" d="M0 176h25l47-129 13 31 12-34-17-44H64z"/><path class="m-b" d="M124 0h25L85 176H59z"/><path class="m-c" d="M120 110l-12 33 11 33h26z"/></svg><span>Alpha<b>X</b></span></a>
+          <p class="footer-about">AlphaX helps businesses move forward with modern websites, user-focused design, e-commerce experiences, and custom web applications — combining practical thinking, modern technology, and AI-assisted workflows to make quality digital solutions more accessible.</p>
+          <p class="footer-news">Useful ideas for your next digital project. Occasional insights — no unnecessary emails.</p>
+          <form class="news" id="news" novalidate><label class="sr-only" for="news-email">Your email address</label><input id="news-email" type="email" placeholder="Your email address" autocomplete="email"><button type="submit" aria-label="Subscribe">→</button></form>
+          <p class="news-msg" id="news-msg" role="status"></p>
+        </div>
+        <div><h4>Explore</h4><ul><li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#work">Our Work</a></li><li><a href="#process">Our Process</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="#services">Web Development</a></li><li><a href="#services">UI/UX Design</a></li><li><a href="#services">E-commerce</a></li><li><a href="#services">Custom Web Applications</a></li><li><a href="#services">SEO &amp; Digital Marketing</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:hello@alphax.dev">hello@alphax.dev</a></li><li><a href="https://wa.me/XXXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li><li>Working worldwide</li></ul></div>
+      </div>
+      <div class="mega" aria-hidden="true">Alpha<span>X</span></div>
+      <div class="footer-base"><span>© <span id="year">2026</span> AlphaX. All rights reserved.</span><span class="motto">// Build fast. Ship sharp.</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span></div>
+    </footer>
+  </div>
+</section>
+</main>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top"><span aria-hidden="true">↑</span></button>
+<script src="script.js"></script>
+</body>
+</html>
